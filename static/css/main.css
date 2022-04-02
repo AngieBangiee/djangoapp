@@ -40,14 +40,7 @@
 }
 .conStyle img {
   padding: 5px
-}
-
-.glassPanel {
-  background-image: linear-gradient(to right bottom,rgba(255,255,255,.3) 0,rgba(255,255,255,.1) 100%);
-  border-radius: 12px;
-  box-shadow: rgba(255,255,255,.5) -20px -20px 45px inset,rgba(0,0,0,.1) 10px 10px 20px,rgba(0,0,0,.06) 5px 5px 10px;
-  position: relative
-}  
+} 
 
 .hello-cover {
   background-image: url("../images/header6.png");
@@ -66,15 +59,6 @@
   background-size: cover;
 }
 
-.glass-box {
-background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
 .glass-box2 {
 background: rgba( 255, 255, 255, 0.3 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -82,24 +66,7 @@ backdrop-filter: blur( 10px );
 -webkit-backdrop-filter: blur( 10px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.glass-box3 {
-  background: rgba( 31, 1, 124, 0.6 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 10px );
-  -webkit-backdrop-filter: blur( 10px );
-  border-radius: 10px;
-}
-.glass-blob {
-  max-width: 100%;
-	max-height: 100%; 
-  background: rgba( 31, 1, 124, 0.6 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 66% 34% 26% 74% / 28% 51% 49% 72%;
-  }
+} 
 
 .home-image {
   max-width: 100%;
@@ -118,7 +85,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   max-width: 100%;
 	max-height: 100%;
   border-radius: 75% 25% 61% 39% / 42% 74% 26% 58%;
-  box-shadow: 5px 15px 20px #1f017c;
+  box-shadow: 5px 15px 20px #16151a;
 }
 .header-text h1 { 
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #1f017c;
@@ -128,13 +95,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 .header-text p {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #1f017c;
-    font-size: 14px;
   }  
-
-  .gradient-1 {
-    background: radial-gradient(transparent, #5a02e0), #c53ea4;
-    height: 180px;
-  }
+ 
 .para-text p {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #f9e5f6;
     font-size: 14px;
@@ -244,14 +206,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     background-color: #1f017c;
     left: -1.5%;
     top: 40%;
-  }
+  } 
 
 
-
-
-
-
-  .head-wave {
+.head-wave {
     position: absolute;
     bottom: 0;
     left: 0;
