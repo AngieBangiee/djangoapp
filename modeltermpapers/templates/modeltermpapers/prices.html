@@ -6,12 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="ModelTermPapers.com term paper prices are $23.95 per page for Undergraduate writing and $30.95 per page for graduate level writing.">  
-    <link rel="stylesheet" href="{% static 'css/bulma/bulma.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/pricebox.css' %}"> 
-    <link rel="icon" href="{% static 'favicon.ico' %}">  	
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bulma/bulma.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pricebox.css' %}"> 
+    <!----<link rel="icon" href="{% static 'favicon.ico' %}">  	---->
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/price.js' %}"></script>
+     
   </head>
+
   <body> 
         
     <section class="hero price-cover is-small">
@@ -36,8 +39,7 @@
           </div>
         </div>
         </nav> 
-        <div class="hero-body">
-        <div class="container mb-6"> 
+        <div class="hero-body container mb-6"> 
             <div class="columns is-centered">
               <div class="column glass-box2 is-6 has-text-centered"> 
               <div class="header-text px-2">
@@ -46,9 +48,9 @@
                 <div class="buttons is-centered p-5"><a class="button is-info" href="#">Order Paper Now!</a></div> 
               </div>
               </div> 
-              </div> 
-          </div> 
+              </div>  
           </div>     
+    </section>
         
     <section class="section extrabody is-medium">
       <div class="container">
@@ -158,36 +160,19 @@
       <footer class="section has-background-info">
         <div class="container pb-5 has-text-centered">
           <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="{% static 'images/modeltermpaper-logo.svg' %}" alt="ModelTermPapers.com" width="250px" height="250px">
+            <img class="image" src="{% static 'bulma-plain-assets/logos/plainb-logo.svg' %}" alt="Model Term Papers Logo" width="96px">
           </a>
         </div>
         <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
         <div class="container">
           <p class="has-text-centered has-text-white">All Rights Reserved © ModelTermPapers.com - E World Publishing</p>
         </div>
-      </footer> 
+      </footer>
 
 
 
 <!----JavaScript for pricing menu---->
-  <script>
- function check() {
-var checkBox = document.getElementById("checbox");
-var text1 = document.getElementsByClassName("text1");
-var text2 = document.getElementsByClassName("text2");
-
-for (var i = 0; i < text1.length; i++) {
-  if (checkBox.checked == true) {
-    text1[i].style.display = "block";
-    text2[i].style.display = "none";
-  } else if (checkBox.checked == false) {
-    text1[i].style.display = "none";
-    text2[i].style.display = "block";
-  }
-}
-}
-check();
-</script>
+  
 
 
 
