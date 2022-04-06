@@ -16,9 +16,9 @@ def services(request):
     return render(request, 'modeltermpapers/services.html')
 
 
-#def guarantees(request): 
+def guarantees(request): 
     return render(request, 'modeltermpapers/guarantees.html')
 
 
-#def termpapers(request): 
+def termpapers(request): 
     return render(request, 'modeltermpapers/custom-term-papers.html')

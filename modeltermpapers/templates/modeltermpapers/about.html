@@ -1,41 +1,18 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+{% extends "modeltermpapers/base.html" %}
+{% load static %} 
+
+    {% block meta %}
     <title>About ModelTermPapers.com - Sister Company of Paper Masters</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Model Term Papers - a sister company of Paper Masters - providing custom term papers and essays.">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="css/bulma/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
-    <script type="text/javascript" src="js/main.js"></script>
-  </head>
-  <body> 
+    {% endblock meta %}  
         
+    {% block hero %}
     <section class="hero price-cover is-small">
-      <div class="is-relative">
-        <nav class="navbar px-3 py-4" style="background-color: transparent;">
-          <div class="navbar-brand">
-            <a class="navbar-item is-hidden-touch" href="#">
-              <img class="image is-fullheight" src="images/modeltermpaper-logo.svg" alt="ModelTermPapers Logo" width="180px" height="200px">
-            </a>
-            <a class="navbar-item is-hidden-desktop" href="#">
-              <img class="image" src="images/modeltermpaper-logo.svg" alt="ModelTermPapers Logo" width="180px" height="200px">
-            </a>
-            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div class="navbar-menu">
-            <div class="navbar-end"><a class="navbar-item" href="#">About</a><a class="navbar-item" href="#">Services</a><a class="navbar-item" href="#">Guarantees</a><a class="navbar-item" href="#">Term Papers</a><a class="navbar-item" href="#">Prices</a></div>
-            <div class="navbar-item"><a class="button is-danger" href="#">Order</a></div>
-          </div>
-        </div>
-        </nav> 
+      {% endblock hero %}
+
+      {% block herobody %}
         <div class="hero-body">
         <div class="container mb-6"> 
             <div class="columns is-centered">
@@ -50,14 +27,9 @@
           </div> 
           </div>     
     </section> 
+    {% endblock herobody %} 
         
-      <section class="section has-background-dark">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-8">
-              <div class="box has-background-light p-6">
-                <h2 class="mb-5 is-size-3 is-size-3-mobile has-text-weight-bold has-text-centered has-text-dark">About Us</h2>
-                 <!-------- content ---------->
+    {% block content %}
                 <div class="mb-5 conStyle"> 
                   <p class="has-text-primary has-text-weight-bold is-size-5-desktop is-size-6-mobile is-size-6-tablet has-text-centered">ModelTermPapers.com</p>
                   <p class="has-text-dark">MTP concentrates on providing academic writing services to college students across the globe. We have been the primary resource for term papers since we started back in November of 2001. Over 20 years of experience from writers that know what professors are looking for in a project.</p>
@@ -98,18 +70,4 @@
           </div>
         </div>
       </section>
-        
-       
-      <footer class="section has-background-danger">
-        <div class="container pb-5 has-text-centered">
-          <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="images/modeltermpaper-logo.svg" alt="ModelTermPapers.com" width="250px" height="250px">
-          </a>
-        </div>
-        <div class="pt-5" style="border-top: 1px solid #fcf7fc;"></div>
-        <div class="container">
-          <p class="has-text-centered has-text-white">All Rights Reserved © ModelTermPapers.com - E World Publishing</p>
-        </div>
-      </footer>
-  </body>
-</html>
+      {% endblock content %} 

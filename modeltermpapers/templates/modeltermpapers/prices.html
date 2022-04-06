@@ -1,44 +1,23 @@
+{% extends "modeltermpapers/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+{% block meta %} 
     <title>Term Paper Prices for ModelTermPapers.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="ModelTermPapers.com term paper prices are $23.95 per page for Undergraduate writing and $30.95 per page for graduate level writing.">  
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bulma/bulma.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    {% endblock meta %}   
+    {% block link %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/pricebox.css' %}"> 
-    <!----<link rel="icon" href="{% static 'favicon.ico' %}">  	---->
-    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock link %}  
+    {% block java %}
     <script src="{% static 'js/price.js' %}"></script>
-     
-  </head>
+    {% endblock java %} 
 
-  <body> 
-        
+    {% block hero %} 
     <section class="hero price-cover is-small">
-      <div class="is-relative">
-        <nav class="navbar px-3 py-4" style="background-color: transparent;">
-          <div class="navbar-brand">
-            <a class="navbar-item is-hidden-touch" href="#">
-              <img class="image is-fullheight" src="{% static 'images/modeltermpaper-logo.svg' %}" alt="ModelTermPapers Logo" width="180px" height="200px">
-            </a>
-            <a class="navbar-item is-hidden-desktop" href="#">
-              <img class="image" src="{% static 'images/modeltermpaper-logo.svg' %}" alt="ModelTermPapers Logo" width="180px" height="200px">
-            </a>
-            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div class="navbar-menu">
-            <div class="navbar-end"><a class="navbar-item" href="#">About</a><a class="navbar-item" href="#">Services</a><a class="navbar-item" href="#">Guarantees</a><a class="navbar-item" href="#">Term Papers</a><a class="navbar-item" href="#">Prices</a></div>
-            <div class="navbar-item"><a class="button is-danger" href="#">Order</a></div>
-          </div>
-        </div>
-        </nav> 
+      {% endblock hero %}
+
+      {% block herobody %}
         <div class="hero-body container mb-6"> 
             <div class="columns is-centered">
               <div class="column glass-box2 is-6 has-text-centered"> 
@@ -49,9 +28,9 @@
               </div>
               </div> 
               </div>  
-          </div>     
-    </section>
-        
+          </div> 
+          {% endblock herobody %}     
+          {% block homepage %}
     <section class="section extrabody is-medium">
       <div class="container">
         <div class="is-vcentered columns pb-6 is-multiline">
@@ -102,7 +81,7 @@
       </div>
     </section>
        
-      
+    {% block extras %}
     <section class="wave-container">
       <div class="wave"></div>
     </section> 
@@ -153,28 +132,6 @@
         </div>
       </div>
     </section>
- 
+    {% endblock extras %}
 
-      <!-------- footer ---------->
-        
-      <footer class="section has-background-info">
-        <div class="container pb-5 has-text-centered">
-          <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="{% static 'bulma-plain-assets/logos/plainb-logo.svg' %}" alt="Model Term Papers Logo" width="96px">
-          </a>
-        </div>
-        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-        <div class="container">
-          <p class="has-text-centered has-text-white">All Rights Reserved © ModelTermPapers.com - E World Publishing</p>
-        </div>
-      </footer>
-
-
-
-<!----JavaScript for pricing menu---->
-  
-
-
-
-  </body>
-</html>
+    {% endblock homepage %}
