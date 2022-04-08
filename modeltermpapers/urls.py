@@ -6,8 +6,9 @@ app_name = 'modeltermpapers'
 
 urlpatterns = [ 
     path('', views.home, name='home'), 
-    #path('', views.prices, name='prices'),
-    url(r'^(?P<name>\b[A-Za-z]\w+\b)/$', views.prices, name="prices"),
-    
+    url('prices/', views.prices, name='prices'),
+    url('about/', views.about, name='about'), 
+    url('services/', views.services, name='services'),
+    url('guarantees/', views.guarantees, name='guarantees'),
+    url('custom-term-papers/', views.termpapers, name='termpapers'), 
 ] 
-
