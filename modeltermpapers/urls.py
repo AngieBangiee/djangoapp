@@ -12,4 +12,3 @@ urlpatterns = [
     url('guarantees/', views.guarantees, name='guarantees'),
     url('custom-term-papers/', views.termpapers, name='termpapers'), 
 ] 
-
