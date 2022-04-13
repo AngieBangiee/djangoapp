@@ -19,13 +19,13 @@ from django.conf.urls.static import static
 from django.conf import settings
 from modeltermpapers import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),    
     path('', include('modeltermpapers.urls', namespace='modeltermpapers')), 
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
 
  
 
