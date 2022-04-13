@@ -1,6 +1,6 @@
 from django.urls import path
 from django.conf.urls import url
-from . import views
+from . import views 
 
 app_name = 'modeltermpapers'
 
@@ -11,4 +11,6 @@ urlpatterns = [
     url('services/', views.services, name='services'),
     url('guarantees/', views.guarantees, name='guarantees'),
     url('custom-term-papers/', views.termpapers, name='termpapers'), 
+    url('order/', views.order, name='order'),
 ] 
+ 

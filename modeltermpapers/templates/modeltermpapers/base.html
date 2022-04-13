@@ -7,9 +7,18 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/bulma.min.css' %}">
     {% block link %} {% endblock link %} 
-    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
     {% block java %} {% endblock java %}
     <script src="{% static 'js/main.js' %}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2687646-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2687646-3');
+</script>
   </head> 
   <body>  
     
@@ -33,8 +42,8 @@
             </a>
           </div>
           <div class="navbar-menu">
-            <div class="navbar-end"><a class="navbar-item" href="{% url 'modeltermpapers:about' %}">About</a><a class="navbar-item" href="{% url 'modeltermpapers:services' %}">Services</a><a class="navbar-item" href="{% url 'modeltermpapers:guarantees' %}">Guarantees</a><a class="navbar-item" href="{% url 'modeltermpapers:termpapers' %}">Term Papers</a><a class="navbar-item" href="{% url 'modeltermpapers:prices' %}">Prices</a></div>
-            <div class="navbar-item"><a class="button is-danger" href="#">Order</a></div>
+            <div class="navbar-end"><a class="navbar-item" href="{% url 'modeltermpapers:home' %}">Home</a><a class="navbar-item" href="{% url 'modeltermpapers:about' %}">About</a><a class="navbar-item" href="{% url 'modeltermpapers:services' %}">Services</a><a class="navbar-item" href="{% url 'modeltermpapers:guarantees' %}">Guarantees</a><a class="navbar-item" href="{% url 'modeltermpapers:termpapers' %}">Term Papers</a><a class="navbar-item" href="{% url 'modeltermpapers:prices' %}">Prices</a></div>
+            <div class="navbar-item"><a class="button is-danger" href="{% url 'modeltermpapers:order' %}">Order</a></div>
           </div>
         </div>
         </nav>    
@@ -48,7 +57,7 @@
             <div class="header-text px-2">
               <h2 class="has-text-white p-4 is-size-3-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold">Need Custom Term Paper Writing Services?</h2>
               <p class="has-text-grey-lighter">Take the stress out of your project! Allow our writers to provide a custom term paper for you today!</p>
-              <div class="buttons is-centered p-5"><a class="button is-info" href="#">Order Paper Now!</a></div> 
+              <div class="buttons is-centered p-5"><a class="button is-info" href="{% url 'modeltermpapers:order' %}">Order Paper Now!</a></div> 
             </div>
             </div> 
             </div> 
@@ -66,8 +75,9 @@
             <div class="box has-background-light p-6">
 
               {% block content %} 
-          {% endblock content %}
+          {% endblock content %} 
 
+          {% block sidecolumn %}
           <div class="column is-one-third"> 
             <div class="box has-background-light p-3">
               <h2 class="is-size-3-desktop is-size-4-mobile is-size-5-tablet has-text-weight-bold has-text-dark has-text-centered">ModelTermPapers</h2>
@@ -90,6 +100,7 @@
         </div>
       </div>
     </section>
+    {% endblock sidecolumn %}
       
     {% block extras %}{% endblock extras %}
 

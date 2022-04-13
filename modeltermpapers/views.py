@@ -22,3 +22,6 @@ def guarantees(request):
 
 def termpapers(request): 
     return render(request, 'modeltermpapers/custom-term-papers.html')
+
+def order(request): 
+    return render(request, 'modeltermpapers/order.html')
