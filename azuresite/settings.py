@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['modeltermpapers.com', '20.49.104.33']
 
+# Added April 14th 2022
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
