@@ -1,4 +1,4 @@
-$Env:DBHOST = "localhost"
-$Env:DBUSER = "manager"
+$Env:DBHOST = "mtp.postgres.database.azure.com"
+$Env:DBUSER = "karen"
 $Env:DBNAME = "pollsdb"
-$Env:DBPASS = "supersecretpass"
+$Env:DBPASS = "Efromm1967"
