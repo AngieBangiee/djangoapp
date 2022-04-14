@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'modeltermpapers'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A1644663D1F4655B085DD2D275A3478 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_517087707D3041D29B40FE2068332822 }}
