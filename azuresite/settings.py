@@ -26,7 +26,7 @@ SECRET_KEY = '-^rq(x*d--6_#635*j84d5(fz9@-3(9vdr_s$9+^@cw08dq(ja'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['modeltermpapers.com']
+ALLOWED_HOSTS = ['modeltermpapers.com', '20.49.104.33']
 
 
 # Application definition
